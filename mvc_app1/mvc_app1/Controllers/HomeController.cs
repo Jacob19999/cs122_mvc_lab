@@ -32,14 +32,26 @@ namespace mvc_app1.Controllers
             List<EmployeeModel> employeesList = new List<EmployeeModel>();
  
             var employees = new mvc_app1.Models.Employee();
-            employeesList = employees.UpdateDT(employees.updateEmployee(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "/MVC_Lab/Employees.csv"));
+            employeesList = employees.UpdateDT(employees.updateEmployee(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "/MVC_Lab/cs122_mvc_lab/Employees.csv"));
 
             return View(employeesList);
+        }
+
+        public ActionResult Orders()
+        {
+
+            List<OrderModel> ordersList = new List<OrderModel>();
+
+            var orders = new mvc_app1.Models.Orders();
+            ordersList = orders.UpdateDT(orders.updateOrders(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "/MVC_Lab/cs122_mvc_lab/Order Details.csv"));
+
+            return View(ordersList);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
+
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }

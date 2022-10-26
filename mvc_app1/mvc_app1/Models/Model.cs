@@ -43,7 +43,7 @@ namespace mvc_app1.Models
         {
 
             int i = dt.Rows.Count;    
-            System.Diagnostics.Debug.WriteLine("Size of table: " + i);
+            //System.Diagnostics.Debug.WriteLine("Size of table: " + i);
             List<EmployeeModel> list1 = new List<EmployeeModel>();
 
             for (int j=0; j<i; j++)
@@ -75,4 +75,55 @@ namespace mvc_app1.Models
             return list1;
         }
     }
+
+    class OrderModel
+    {
+
+        public double? OrderID { get; set; }
+        public double? ProductID { get; set; }
+        public double? UnitPrice { get; set; }
+        public double? Quanity { get; set; }
+        public double? Discount { get; set; }
+
+    }
+    
+    class Orders
+    {
+
+        public DataTable updateOrders(string path)
+        {
+            var employees = new File.FileGateway();
+            return employees.GetDataTabletFromCSVFile(path);
+        }
+
+        public List<OrderModel> UpdateDT(DataTable dt)
+        {
+
+            int i = dt.Rows.Count;
+            //System.Diagnostics.Debug.WriteLine("Size of table: " + i);
+            List<OrderModel> list1 = new List<OrderModel>();
+
+            for (int j = 0; j < i; j++)
+            {
+
+                var k = new OrderModel();
+
+                k.OrderID = Convert.ToDouble(dt.Rows[j][0]);
+                k.ProductID = Convert.ToDouble(dt.Rows[j][1]);
+                k.UnitPrice = Convert.ToDouble(dt.Rows[j][2]);
+                k.Quanity = Convert.ToDouble(dt.Rows[j][3]);
+                k.Discount = Convert.ToDouble(dt.Rows[j][4]);
+
+                list1.Add(k);
+
+            }
+            return list1;
+
+        }
+
+
+        
+    }
+    
+
 }

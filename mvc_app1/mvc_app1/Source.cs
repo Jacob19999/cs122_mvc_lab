@@ -44,6 +44,7 @@ namespace File
             }
             catch (Exception ex)
             {
+                string err = "File Not Found.";
             }
             return dt;
         }

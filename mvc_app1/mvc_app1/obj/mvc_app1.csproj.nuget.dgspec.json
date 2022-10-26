@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tngzj\\Desktop\\MVC_Lab\\mvc_app1\\mvc_app1\\mvc_app1.csproj": {}
+    "C:\\Users\\user\\Desktop\\MVC_Lab\\cs122_mvc_lab\\mvc_app1\\mvc_app1\\mvc_app1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tngzj\\Desktop\\MVC_Lab\\mvc_app1\\mvc_app1\\mvc_app1.csproj": {
+    "C:\\Users\\user\\Desktop\\MVC_Lab\\cs122_mvc_lab\\mvc_app1\\mvc_app1\\mvc_app1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tngzj\\Desktop\\MVC_Lab\\mvc_app1\\mvc_app1\\mvc_app1.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\MVC_Lab\\cs122_mvc_lab\\mvc_app1\\mvc_app1\\mvc_app1.csproj",
         "projectName": "mvc_app1",
-        "projectPath": "C:\\Users\\tngzj\\Desktop\\MVC_Lab\\mvc_app1\\mvc_app1\\mvc_app1.csproj",
-        "packagesPath": "C:\\Users\\tngzj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tngzj\\Desktop\\MVC_Lab\\mvc_app1\\mvc_app1\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\MVC_Lab\\cs122_mvc_lab\\mvc_app1\\mvc_app1\\mvc_app1.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\MVC_Lab\\cs122_mvc_lab\\mvc_app1\\mvc_app1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tngzj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -55,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -67,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
